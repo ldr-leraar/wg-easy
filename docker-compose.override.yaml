@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  wg-easy:
+    ports:
+      # Overschrijft 51820 naar 51822 op de host
+      - "51822:51820/udp"
+      # Overschrijft 51821 naar 51823 op de host
+      - "51823:51821/tcp"
