@@ -19,7 +19,7 @@ services:
       - etc_wireguard:/etc/wireguard
       - /lib/modules:/lib/modules:ro
     ports:
-      - "51822:51820/udp"
+      - "51822:51822/udp"
       - "51823:51821/tcp"
     restart: unless-stopped
     cap_add:
